@@ -1,3 +1,4 @@
+1)code to find max of 3 numbers
 /program to compute the max of 3/
 #include<stdio.h>
 int main()
@@ -13,3 +14,45 @@ int main()
         printf("%f is maximum",z);
     return 0;
 }
+
+2)code 2 using structure and 2d array
+#include<stdio.h>
+//using structure and 1D array //
+int main()
+{
+struct address
+{
+    char phone[25];
+    char city [15];
+    int pin;
+};
+struct emp
+{
+    char name[25];
+    struct address *a;
+};
+struct emp e={"Jeru","53102","nagpur",103};
+printf("name-%s, city-%s, phone-%s ,pin-%d",e.name,e.a->city,e.a->phone,&e.a->pin);
+return 0;
+}
+
+3)code to find the max of 2 numbers
+/*program to compute the max no.*/
+#include<stdio.h>
+int main()
+{
+    int x,y; //the x and y are two no.//
+    printf("Enter the value of x and y");
+    scanf("%d%d",&x,&y);
+    if(x>y)
+    {
+        printf("the maximum no. is %d",x);
+    }
+    else
+    {
+        printf("the maximum no. is %d",y);
+    }
+    return 0;
+}
+
+4)code 
