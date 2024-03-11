@@ -55,4 +55,667 @@ int main()
     return 0;
 }
 
-4)code 
+4)code to find the min of the 2 numbers
+/*program to compute the max no.*/
+#include<stdio.h>
+int main()
+{
+    int x,y; //the x and y are two no.//
+    printf("Enter the value of x and y");
+    scanf("%d%d",&x,&y);
+    if(x>y)
+    {
+        printf("the maximum no. is %d",x);
+    }
+    else
+    {
+        printf("the maximum no. is %d",y);
+    }
+    return 0;
+}
+
+5)code to compute the trignometeric function
+/*program to compute trignometeric functions*/
+#include<ctype.h>
+#include<stdio.h>
+int main()
+{
+    char m;
+    float angle;
+    double radian,value;
+    printf("Enter the value of angle and m\n");
+    scanf("%f%lf",&angle,&m);
+    radian=(angle*3.142)/180;
+    if (m=='s'||m=='S')
+        value=sin(radian);
+    else if (m=='c'||m=='C')
+        value=cos(radian);
+    else if (m=='t'||m=='T')
+        value=tan(radian);
+         printf("the value is %lf and radians is %f",value,radian);
+    return 0;
+}
+
+6)Code to find out the number of 0,+ and -
+#include <stdio.h>
+int number (int N)
+{
+    int i=1;
+    int n;
+    int p_count=0,n_count=0,o_count=0;
+    while (i<=N)
+    {
+        printf("Enter the no.\n");
+        scanf("%d",&n);
+        if (n>0)
+        {
+            p_count++ ;
+            printf("the positive is %d",n);
+        }
+        else if (n<0)
+        {
+            n_count++ ;
+            printf("the negative is %d",n);
+        }
+        else if(n=0)
+        {
+            o_count++ ;
+            printf("the zero is %d",n);
+        }
+        i++;
+    }
+    return n;
+}
+int main()
+{
+    int N,n,p_count,n_count,o_count;
+    printf("Enter the number\n");
+    scanf("%d",&N);
+    n=number(N);
+    return 0;
+}
+
+
+7)Code program to compute whether the given no.is positive,negative or zero*/
+#include<stdio.h>
+int main()
+{
+    int x; //x is given no.//
+    printf("Enter the value of x\n");
+    scanf("%d",&x);
+    if(x>0)
+        printf("The given number is positive");
+    else if(x<0)
+        printf("The given number is negative");
+    else
+        printf("The given number is zero");
+    return 0;
+}
+
+8)Code to compute the total cost of the taxi using functions
+/*program to compute the cost*/
+#include <stdio.h>
+void total_cost (int N)
+{
+    int i=1;
+    while (i<=N)
+    {
+        int N;
+        float D,Xo,Yo,n,Xc,O,C,cost;
+        printf("enter the value of D,Xo,Yo,Xc,n\n");
+        scanf("%f%f%f%f%f",&D,&Xo,&Yo,&Xc,&n);
+        O=Xo+(D-n)*Yo;
+        C=10+Xc*D;
+         printf("the total cost is %f",O);
+          printf("the total cost is %f",C);
+            if (O>C)
+        {
+            printf("The company will select classic ");
+
+        }
+         else if (O<=C)
+         {
+             printf("The company will select online ");
+
+         }
+         i=i+1;
+    }
+    return ;
+}
+int main()
+{
+    int N;
+    float O,C;
+    printf("enter the value of N\n");
+    scanf("%d",&N);
+    total_cost(N);
+    return 0;
+}
+
+9)Code to find the salary of the employ using switch
+//program to compute the salary//
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+    char d;
+    float salary,total_salary;
+    printf("Enter the value of d\n");
+    scanf("%c",&d);
+    printf("Enter the value of salary\n");
+    scanf("%f",&salary);
+    d=toupper(d);
+    switch(d)
+    {
+        case'S':if(salary>1,00,000&&salary<=2,00,000)
+                     {
+                         total_salary=(salary*0.5)+salary;
+                         printf("the total salary is %f",total_salary);
+                     }
+                     else if(salary>70,000&&salary<=1,00,000)
+                     {
+                         total_salary=salary+(0.3*salary);
+                         printf("the total salary is %f",total_salary);
+                     }
+                     else if(salary>40,000&&salary<=70,000)
+                     {
+                         total_salary=salary+(salary*0.3);
+                         printf("the total salary is %f",total_salary);
+                     }
+                     else
+                        printf("no increment");
+                     break;
+        case'A':if(salary>80,000&&salary<=1,60,000)
+                     {
+                         total_salary=(salary*0.4)+salary;
+                         printf("the total salary is %f",total_salary);
+                     }
+                     else if(salary>50,000&&salary<=80,000)
+                     {
+                         total_salary=(salary*0.5)+salary;
+                         printf("the total salary is %f",total_salary);
+                     }
+                     else if(salary>1,00,000&&salary<=2,00,000)
+                     {
+                         total_salary=(salary*0.9)+salary;
+                         printf("the total salary is %f",total_salary);
+                     }
+                     break;
+         case 'P':if(salary>=60,000&&salary<=80,000)
+                      {
+                          total_salary=(0.7*salary)+salary;
+                          printf("the total salary is %f",total_salary);
+                      }
+                      else if(salary>=40,000&&salary<=70,000)
+                      {
+                          total_salary=(0.5*salary)+salary;
+                          printf("the total salary is %f",total_salary);
+                      }
+    }
+}
+
+
+10)Code program to compute the no. of days
+#include<stdio.h>
+int main()
+{
+    float D,M,N,number_of_days;
+    printf("enter the value of D,M,N");
+    scanf("%f%f%f",&D,&M,&N);
+    number_of_days= D/(M-N);
+    printf("the number of days taken is %f",number_of_days);
+    return 0;
+}
+
+
+11)Code program to compute the length of paper
+#include<stdio.h>
+#define pi 3.14
+float length(float t,int n)
+{
+  float l;
+  l=(pi*t)/6(( pow (2, n)+4) ( pow (2 ,n)-1));
+  return l;
+}
+int main()
+{
+    float l,t;
+    int n;
+    printf("Enter the value of t,n\n");
+    scanf("%f%d",&t,&n);
+    l=length(t,n);
+    printf("the length of paper is %f",l);
+    return 0;
+}
+
+12)Program to compute the fine that to be paid using else 
+#include <stdio.h>
+#include <ctype.h>
+int main()
+{
+    int days;
+    float fine;
+    char m;
+    printf("enter no. of days and m\n");
+    scanf("%d%c",&days,&m);
+    if(m=='c')
+    {
+        if(0<days&&days<=5)
+        fine=0.5*days;
+        else if (5<days&&days<=10)
+        fine=(0.5*5)+(1*(days-5));
+        else if (10<days&&days<=15)
+        fine=(0.5*5)+(1*5)+(5*(days-10));
+        else
+        printf("your membership is cancelled");
+    }
+    else if(m=='l')
+    {
+        if(0<days&&days<=5)
+        fine=1*days;
+        else if(5<days&&days<=10)
+        fine=(1*5)+(2*(10-days));
+        else if (10<days&&days<=15)
+        fine=(1*5)+(2*5)+(10*(15-days));
+        else
+            printf("you cannot borrow book anymore");
+
+    }
+    printf("fine that should be paid is %f",fine);
+    return 0;
+}
+ 13)Code  program to compute the change in length of effile tower
+#include<stdio.h>
+#define alpha 11.1*0.000001
+int main()
+{
+    float change_height,temp_change;
+    printf("Enter temp_change");
+    scanf("%f",&temp_change);
+    change_height=(temp_change*324*alpha);
+    printf("the change in height of efile tower is %f",change_height);
+    return 0;
+}
+
+14)Code to read and display player name and addresss using structure
+#include<stdio.h>
+ typedef struct
+{
+    char name[25];
+    char p[30];
+}PLAYER;
+   void read (PLAYER a[100],int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+        scanf("%s %s",a[i].name,a[i].p);
+    return;
+}
+void display (PLAYER a[100],int n)
+{
+  int i;
+    for(i=0;i<n;i++)
+    {
+        printf("%s %s",a[i].name,a[i].p);
+        printf("\n");
+    }
+    return;
+}
+int main()
+{
+    PLAYER a[100];
+    int n;
+    printf("Enter the n\n");
+    scanf("%d",&n);
+    printf("Enter the name and address\n");
+    read(a,n);
+    display(a,n);
+    return 0;
+
+}
+
+15)Code program to calculate the mileage remersument
+#include<stdio.h>
+int main()
+{
+    float i_reading,f_reading,mileage_remersument;
+    printf("enter i_reading");
+    scanf("%f",&i_reading);
+    printf("enter f_reading");
+    scanf("%f",&f_reading);
+    mileage_remersument=(f_reading-i_reading)*18;
++-    printf("The mileage_remersument is %f",mileage_remersument);
+    return 0;
+}
+
+16)program to compute the charge to be paid
+#include<stdio.h>
+int main()
+{
+    float unit_consumed,charges,Total_charges;
+    printf("enter the value of unit_consumed\n");
+    scanf("%f",&unit_consumed);
+    if (unit_consumed<0)
+        printf("Invalid");
+    else if(unit_consumed>0&&unit_consumed<=200 )
+        charges=unit_consumed*0.80;
+    else if(unit_consumed>200&&unit_consumed<=300)
+        charges=200*0.80+(unit_consumed-200)*0.90;
+    else if (unit_consumed>300)
+         charges=200*0.80+300*0.90+(unit_consumed-300)*1;
+    Total_charges=charges+100;
+    if(Total_charges>400)
+        Total_charges=Total_charges+0.15*Total_charges;
+    printf("the Total_charges is %f",Total_charges);
+    return 0;
+
+
+}
+
+17)program to compute the cost to be paid
+#include<stdio.h>
+#include<ctype.h>
+float total_amount (char type);
+int main()
+{
+    char type;
+    float  t;
+    printf("Enter the value of type\n");
+    scanf("%c",&type);
+    t=total_amount(type);
+    return 0;
+}
+float total_amount(char type)
+{
+    float t;
+    switch (type)
+    {
+    case 'b': printf("the cost is 26",t);
+              break;
+    case 'c': printf("the cost is 31",t);
+              break;
+    case 's': printf("the cost is 51",t);
+              break;
+    case 'm': printf("the cost is 46",t);
+              break;
+    default: printf("invalid");
+    }
+    return t;
+}
+
+18)program is to compute agreegate marks and percentage
+#include<stdio.h>
+int main()
+{
+    float percentage;
+    int sub1,sub2,sub3,sub4,sub5,agreegate_marks;
+    printf("enter sub1,sub2,sub3,sub4,sub5\n");
+    scanf("%d%d%d%d%d",&sub1,&sub2,&sub3,&sub4,&sub5);
+    agreegate_marks=sub1+sub2+sub3+sub4+sub5;
+    percentage=(agreegate_marks*100)/500;
+    printf("the agreegate_marks is %d\n percentage is %f",agreegate_marks,percentage);
+    return 0;
+}
+
+19)Find the year is leap year or not 
+#include<stdio.h>
+
+int main()
+{
+    int days;
+    printf("Enter number of days\n");
+    scanf("%d",&days);
+    if(days==366)
+        printf("Leap year\n");
+    else if(days==365)
+        printf("Light year\n");
+    else
+        printf("Invalid input\n");
+    return 0;
+}
+
+20)Code to find the character and display message
+#include<stdio.h>
+int main()
+{
+    char day;
+    printf("Enter a character for day\n");
+    scanf("%c",&day);
+    if(day=='F'||day=='f')
+    {
+        printf("Have a nice weekend!\n");
+    }
+    else
+    {
+        printf("Have a nice day\n");
+    }
+    return 0;
+}
+
+
+21)Code to find the sum of the numbers
+#include<stdio.h>
+int main()
+{
+    int n,sum=0;
+    printf("Enter n value\n");
+    scanf("%d",&n);
+     int i;
+    for(i=1;i<=n;i++)
+    {
+       sum=sum+i;
+    }
+    printf("\nsum of natural numbers is %d\n",sum);
+    return 0;
+}
+
+22)Code to find the series of *
+#include<stdio.h>
+int main()
+{
+    int i,j,n;
+    printf("Enter n value\n");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+       for(j=1;j<=i;j++)
+       {
+           printf("* ");
+       }
+       printf("\n");
+    }
+    return 0;
+}
+
+23)Code to find the square of the number
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int number,sr;
+    printf("Enter a number\n");
+    scanf("%d",&number);
+    sr=sqrt(number);
+    printf("Square root of the given number is %d",sr);
+    return 0;
+}
+
+24)Code to make a calculator
+#include<stdio.h>
+int main()
+{
+    int num1,num2;
+    char operation;
+    float result;
+    printf("Enter 2 numbers\n ");
+
+    scanf("%d%d",&num1,&num2);
+    printf("Enter the operation\n");
+    scanf(" %c",&operation);
+    switch(operation)
+    {
+        case'+': result=num1+num2;
+                 printf("sum is %0.2f\n",result);
+                 break;
+
+        case'-': result=num1-num2;
+                 printf("Subtraction is %0.2f\n",result);
+                 break;
+
+        case'*': result=num1*num2;
+                 printf("Multiplication is %0.2f\n",result);
+                 break;
+
+        case'/': result=(float)num1/num2;
+                 printf("Division is %0.2f\n",result);
+                 break;
+
+        default : printf("Invalid operation\n");
+                  break;
+    }
+}
+
+25)Code to find the fibonnaci series
+#include<stdio.h>
+int main()
+{
+    int i,n;
+    int f1=0,f2=1,f3;
+    printf("Enter n value\n");
+    scanf("%d",&n);
+    printf("%d %d",f1,f2);
+    for(i=2;i<n;i++)
+    {
+      f3=f1+f2;
+      f1=f2;
+      f2=f3;
+      printf("%d ",f3);
+    }
+    return 0;
+}
+
+26)Code to find the factorial of the number 
+#include<stdio.h>
+
+int main()
+{
+    int product=1,n;
+    printf("Enter a number\n");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+        product=product*i;
+    }
+    printf("Factorial is %d",product);
+    return 0;
+}
+
+27)Code to find the number is odd or even
+#include<stdio.h>
+
+int main()
+{
+    int number;
+    printf("Enter a number\n");
+    scanf("%d",&number);
+    if(number%2==0)
+        printf("Number is even\n");
+    else
+        printf("Number is odd\n");
+    return 0;
+}
+
+28)Code to find the grade of the student
+#include<stdio.h>
+//fun prototype
+void count_grades(int n);
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    //fn call
+    count_grades(n);
+    return 0;
+}
+//fn definition
+void count_grades(int n)
+{
+    int i,marks,f=0,e=0,d=0,c=0,b=0,a=0,s=0;
+    for(i=1;i<=10;i++)
+    {
+        scanf("%d",&marks);
+        if(marks>=0&&marks<32)
+            f++;
+        else if(marks>=32&&marks<=40)
+            e++;
+        else if(marks>=41&&marks<=48)
+            d++;
+        else if(marks>=49&&marks<=56)
+            c++;
+        else if(marks>=57&&marks<=64)
+            b++;
+        else if(marks>=65&&marks<=72)
+            a++;
+        else
+            s++;
+
+    }
+    printf("S grade=%d\n",s);
+    printf("A grade=%d\n",a);
+    printf("B grade=%d\n",b);
+    printf("C grade=%d\n",c);
+    printf("D grade=%d\n",d);
+    printf("E grade=%d\n",e);
+    printf("F grade=%d\n",f);
+}
+
+29)code to read and display player details using structure
+#include<stdio.h>
+struct cricket_player
+{
+    char player_name[20];
+    char team_name[20];
+    float average;
+    int highest_score;
+    int centuries;
+    int ODI_rank;
+};
+int main()
+{
+    struct cricket_player p1;
+    printf("Enter the player name\n team name\n average\n highest score\n centuries\n ODI rank\n");
+    scanf("%s%s%f%d%d%d",p1.player_name,p1.team_name,&p1.average,&p1.highest_score,&p1.centuries,&p1.ODI_rank);
+    printf("%s%s%f%d%d%d",player_name,team_name,average,highest_score,centuries,ODI_rank);
+    return 0;
+}
+
+30)Code in which structure using fuction
+    #include<stdio.h>
+     struct browser
+    {
+        char name[25];
+        char copyright [25];
+        float version;
+    };
+
+    struct browser read()
+    {
+        struct browser b1;
+        scanf("%s%s%f",b1.name,b1.copyright,&b1.version);
+        return b1;
+    };
+
+    void display (struct browser b1)
+    {
+         printf("\n%s\n%s\n%f",bname,bcopyright,n);
+    }
+
+    main()
+    {
+        struct browser b1;
+        b=read();
+        display(b);
+
+    }
+
