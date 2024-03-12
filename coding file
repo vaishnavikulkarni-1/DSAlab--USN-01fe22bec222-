@@ -56,7 +56,7 @@ int main()
 }
 
 4)code to find the min of the 2 numbers
-/*program to compute the max no.*/
+/*program to compute the min no.*/
 #include<stdio.h>
 int main()
 {
@@ -65,38 +65,18 @@ int main()
     scanf("%d%d",&x,&y);
     if(x>y)
     {
-        printf("the maximum no. is %d",x);
+        printf("the minimum no. is %d",y);
     }
     else
     {
-        printf("the maximum no. is %d",y);
+        printf("the minimum no. is %d",x);
     }
     return 0;
 }
 
-5)code to compute the trignometeric function
-/*program to compute trignometeric functions*/
-#include<ctype.h>
-#include<stdio.h>
-int main()
-{
-    char m;
-    float angle;
-    double radian,value;
-    printf("Enter the value of angle and m\n");
-    scanf("%f%lf",&angle,&m);
-    radian=(angle*3.142)/180;
-    if (m=='s'||m=='S')
-        value=sin(radian);
-    else if (m=='c'||m=='C')
-        value=cos(radian);
-    else if (m=='t'||m=='T')
-        value=tan(radian);
-         printf("the value is %lf and radians is %f",value,radian);
-    return 0;
-}
 
-6)Code to find out the number of 0,+ and -
+
+5)Code to find out the number of 0,+ and -
 #include <stdio.h>
 int number (int N)
 {
@@ -136,23 +116,8 @@ int main()
 }
 
 
-7)Code program to compute whether the given no.is positive,negative or zero*/
-#include<stdio.h>
-int main()
-{
-    int x; //x is given no.//
-    printf("Enter the value of x\n");
-    scanf("%d",&x);
-    if(x>0)
-        printf("The given number is positive");
-    else if(x<0)
-        printf("The given number is negative");
-    else
-        printf("The given number is zero");
-    return 0;
-}
 
-8)Code to compute the total cost of the taxi using functions
+6)Code to compute the total cost of the taxi using functions
 /*program to compute the cost*/
 #include <stdio.h>
 void total_cost (int N)
@@ -255,20 +220,9 @@ int main()
 }
 
 
-10)Code program to compute the no. of days
-#include<stdio.h>
-int main()
-{
-    float D,M,N,number_of_days;
-    printf("enter the value of D,M,N");
-    scanf("%f%f%f",&D,&M,&N);
-    number_of_days= D/(M-N);
-    printf("the number of days taken is %f",number_of_days);
-    return 0;
-}
 
 
-11)Code program to compute the length of paper
+10)Code program to compute the length of paper
 #include<stdio.h>
 #define pi 3.14
 float length(float t,int n)
@@ -288,7 +242,7 @@ int main()
     return 0;
 }
 
-12)Program to compute the fine that to be paid using else 
+11)Program to compute the fine that to be paid using else 
 #include <stdio.h>
 #include <ctype.h>
 int main()
