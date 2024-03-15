@@ -1,0 +1,63 @@
+9)Code to find the salary of the employ using switch
+//program to compute the salary//
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+    char d;
+    float salary,total_salary;
+    printf("Enter the value of d\n");
+    scanf("%c",&d);
+    printf("Enter the value of salary\n");
+    scanf("%f",&salary);
+    d=toupper(d);
+    switch(d)
+    {
+        case'S':if(salary>1,00,000&&salary<=2,00,000)
+                     {
+                         total_salary=(salary*0.5)+salary;
+                         printf("the total salary is %f",total_salary);
+                     }
+                     else if(salary>70,000&&salary<=1,00,000)
+                     {
+                         total_salary=salary+(0.3*salary);
+                         printf("the total salary is %f",total_salary);
+                     }
+                     else if(salary>40,000&&salary<=70,000)
+                     {
+                         total_salary=salary+(salary*0.3);
+                         printf("the total salary is %f",total_salary);
+                     }
+                     else
+                        printf("no increment");
+                     break;
+        case'A':if(salary>80,000&&salary<=1,60,000)
+                     {
+                         total_salary=(salary*0.4)+salary;
+                         printf("the total salary is %f",total_salary);
+                     }
+                     else if(salary>50,000&&salary<=80,000)
+                     {
+                         total_salary=(salary*0.5)+salary;
+                         printf("the total salary is %f",total_salary);
+                     }
+                     else if(salary>1,00,000&&salary<=2,00,000)
+                     {
+                         total_salary=(salary*0.9)+salary;
+                         printf("the total salary is %f",total_salary);
+                     }
+                     break;
+         case 'P':if(salary>=60,000&&salary<=80,000)
+                      {
+                          total_salary=(0.7*salary)+salary;
+                          printf("the total salary is %f",total_salary);
+                      }
+                      else if(salary>=40,000&&salary<=70,000)
+                      {
+                          total_salary=(0.5*salary)+salary;
+                          printf("the total salary is %f",total_salary);
+                      }
+    }
+}
+
+
