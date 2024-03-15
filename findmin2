@@ -1,0 +1,18 @@
+4)code to find the min of the 2 numbers
+/*program to compute the min no.*/
+#include<stdio.h>
+int main()
+{
+    int x,y; //the x and y are two no.//
+    printf("Enter the value of x and y");
+    scanf("%d%d",&x,&y);
+    if(x>y)
+    {
+        printf("the minimum no. is %d",y);
+    }
+    else
+    {
+        printf("the minimum no. is %d",x);
+    }
+    return 0;
+}
