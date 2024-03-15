@@ -1,0 +1,39 @@
+
+5)Code to find out the number of 0,+ and -
+#include <stdio.h>
+int number (int N)
+{
+    int i=1;
+    int n;
+    int p_count=0,n_count=0,o_count=0;
+    while (i<=N)
+    {
+        printf("Enter the no.\n");
+        scanf("%d",&n);
+        if (n>0)
+        {
+            p_count++ ;
+            printf("the positive is %d",n);
+        }
+        else if (n<0)
+        {
+            n_count++ ;
+            printf("the negative is %d",n);
+        }
+        else if(n=0)
+        {
+            o_count++ ;
+            printf("the zero is %d",n);
+        }
+        i++;
+    }
+    return n;
+}
+int main()
+{
+    int N,n,p_count,n_count,o_count;
+    printf("Enter the number\n");
+    scanf("%d",&N);
+    n=number(N);
+    return 0;
+}
