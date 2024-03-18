@@ -1,0 +1,19 @@
+10)Code program to compute the length of paper
+#include<stdio.h>
+#define pi 3.14
+float length(float t,int n)
+{
+  float l;
+  l=(pi*t)/6(( pow (2, n)+4) ( pow (2 ,n)-1));
+  return l;
+}
+int main()
+{
+    float l,t;
+    int n;
+    printf("Enter the value of t,n\n");
+    scanf("%f%d",&t,&n);
+    l=length(t,n);
+    printf("the length of paper is %f",l);
+    return 0;
+}
