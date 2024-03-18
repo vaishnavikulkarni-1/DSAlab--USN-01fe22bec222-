@@ -1,0 +1,26 @@
+
+ #include<stdio.h>
+int sum (int N)
+{
+    int ft=-1;
+    int st=1;
+    int count=1,tt;
+    while(count<=N)
+    {
+        tt=ft+st;
+        ft=st;
+        st=tt;
+        printf("%3d",tt);
+        count++;
+    }
+    return tt;
+}
+int main()
+{
+    int N,tt;
+    printf("Enter the number");
+    scanf("%d",&N);
+    tt=sum(N);
+    return 0;
+}
+
