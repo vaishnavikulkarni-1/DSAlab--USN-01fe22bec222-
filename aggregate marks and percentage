@@ -1,0 +1,13 @@
+18)program is to compute agreegate marks and percentage
+#include<stdio.h>
+int main()
+{
+    float percentage;
+    int sub1,sub2,sub3,sub4,sub5,agreegate_marks;
+    printf("enter sub1,sub2,sub3,sub4,sub5\n");
+    scanf("%d%d%d%d%d",&sub1,&sub2,&sub3,&sub4,&sub5);
+    agreegate_marks=sub1+sub2+sub3+sub4+sub5;
+    percentage=(agreegate_marks*100)/500;
+    printf("the agreegate_marks is %d\n percentage is %f",agreegate_marks,percentage);
+    return 0;
+}
