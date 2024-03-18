@@ -1,0 +1,23 @@
+16)program to compute the charge to be paid
+#include<stdio.h>
+int main()
+{
+    float unit_consumed,charges,Total_charges;
+    printf("enter the value of unit_consumed\n");
+    scanf("%f",&unit_consumed);
+    if (unit_consumed<0)
+        printf("Invalid");
+    else if(unit_consumed>0&&unit_consumed<=200 )
+        charges=unit_consumed*0.80;
+    else if(unit_consumed>200&&unit_consumed<=300)
+        charges=200*0.80+(unit_consumed-200)*0.90;
+    else if (unit_consumed>300)
+         charges=200*0.80+300*0.90+(unit_consumed-300)*1;
+    Total_charges=charges+100;
+    if(Total_charges>400)
+        Total_charges=Total_charges+0.15*Total_charges;
+    printf("the Total_charges is %f",Total_charges);
+    return 0;
+
+
+}
