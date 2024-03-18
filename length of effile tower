@@ -1,0 +1,12 @@
+ 13)Code  program to compute the change in length of effile tower
+#include<stdio.h>
+#define alpha 11.1*0.000001
+int main()
+{
+    float change_height,temp_change;
+    printf("Enter temp_change");
+    scanf("%f",&temp_change);
+    change_height=(temp_change*324*alpha);
+    printf("the change in height of efile tower is %f",change_height);
+    return 0;
+}
