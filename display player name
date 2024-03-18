@@ -1,0 +1,36 @@
+14)Code to read and display player name and addresss using structure
+#include<stdio.h>
+ typedef struct
+{
+    char name[25];
+    char p[30];
+}PLAYER;
+   void read (PLAYER a[100],int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+        scanf("%s %s",a[i].name,a[i].p);
+    return;
+}
+void display (PLAYER a[100],int n)
+{
+  int i;
+    for(i=0;i<n;i++)
+    {
+        printf("%s %s",a[i].name,a[i].p);
+        printf("\n");
+    }
+    return;
+}
+int main()
+{
+    PLAYER a[100];
+    int n;
+    printf("Enter the n\n");
+    scanf("%d",&n);
+    printf("Enter the name and address\n");
+    read(a,n);
+    display(a,n);
+    return 0;
+
+}
