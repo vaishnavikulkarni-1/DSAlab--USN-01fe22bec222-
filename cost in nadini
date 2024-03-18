@@ -1,0 +1,30 @@
+/*program to compute the cost to be paid*/
+#include<stdio.h>
+#include<ctype.h>
+float total_amount (char type);
+int main()
+{
+    char type;
+    float  t;
+    printf("Enter the value of type\n");
+    scanf("%c",&type);
+    t=total_amount(type);
+    return 0;
+}
+float total_amount(char type)
+{
+    float t;
+    switch (type)
+    {
+    case 'b': printf("the cost is 26",t);
+              break;
+    case 'c': printf("the cost is 31",t);
+              break;
+    case 's': printf("the cost is 51",t);
+              break;
+    case 'm': printf("the cost is 46",t);
+              break;
+    default: printf("invalid");
+    }
+    return t;
+}
