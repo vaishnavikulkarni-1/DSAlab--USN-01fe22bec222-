@@ -1,0 +1,36 @@
+11)Program to compute the fine that to be paid using else 
+#include <stdio.h>
+#include <ctype.h>
+int main()
+{
+    int days;
+    float fine;
+    char m;
+    printf("enter no. of days and m\n");
+    scanf("%d%c",&days,&m);
+    if(m=='c')
+    {
+        if(0<days&&days<=5)
+        fine=0.5*days;
+        else if (5<days&&days<=10)
+        fine=(0.5*5)+(1*(days-5));
+        else if (10<days&&days<=15)
+        fine=(0.5*5)+(1*5)+(5*(days-10));
+        else
+        printf("your membership is cancelled");
+    }
+    else if(m=='l')
+    {
+        if(0<days&&days<=5)
+        fine=1*days;
+        else if(5<days&&days<=10)
+        fine=(1*5)+(2*(10-days));
+        else if (10<days&&days<=15)
+        fine=(1*5)+(2*5)+(10*(15-days));
+        else
+            printf("you cannot borrow book anymore");
+
+    }
+    printf("fine that should be paid is %f",fine);
+    return 0;
+}
