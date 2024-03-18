@@ -1,0 +1,25 @@
+#include <stdio.h>
+int marks_count (int N)
+{
+    int i=1;
+    int count=0;
+    while (i<=N)
+    {
+        int marks;
+        printf("Enter the marks\n");
+        scanf("%d",&marks);
+        if(marks>=50)
+            count++;
+        i++;
+    }
+    return count;
+}
+int main()
+{
+    int N,count;
+    printf("Enter the  number\n");
+    scanf("%d",&N);
+    count=marks_count(N);
+    printf("The marks obtained is %d",count);
+    return 0;
+}
