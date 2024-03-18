@@ -1,0 +1,42 @@
+// the input is first character and number(5)
+#include<stdio.h>
+#include<ctype.h>
+float total_prize (float n, char T)
+{
+    float t;
+    switch (T)
+    {
+        case 'I':if (n==5  || n== 14)
+                 t=n*75.49+n*75.49*2*0.09;
+                 else if (n==19)
+                    t=19*95.50+ 19*2*95.50*0.12;
+                 break;
+        case 'B':if (n==5 || n== 14.2)
+                 t=n*77.50+n*77.50*2*0.09;
+                 else if (n==19)
+                 t=19 *97.50+19 *97.50 *2*0.12;
+                 break;
+        case 'H':if (n==5 || n== 14.2)
+                 t=n *79.50 +n *79.50 *2 *0.09;
+                 else if (n==19)
+                 t=19 *99.50+19*99.50*2*0.12;
+                 break;
+        default:printf("invalid input");
+
+    }
+    return t;
+}
+
+int main()
+{
+    float n,t;
+    char T;
+    printf("enter the value of T and n\n");
+    scanf("%c%f",&T,&n);
+    t=total_prize(n,T);
+    if (n>0 && T=='I'|| T=='B'|| T=='H')
+    printf("%f is total prize to be paid ",t+20);
+    else  if (n<0)
+    printf("Invalid input");
+    return 0;
+}
