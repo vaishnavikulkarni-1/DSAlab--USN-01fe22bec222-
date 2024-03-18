@@ -1,0 +1,52 @@
+#include<stdio.h>
+#include<string.h>
+ typedef struct
+{
+    char name[25];
+    int age;
+}PLAYER;
+   void read (PLAYER a[100],int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+        scanf("%s %d",a[i].name,&a[i].age);
+    return;
+}
+void display (PLAYER a[100],int n)
+{
+  int i;
+  printf("The entered details is \n");
+    for(i=0;i<n;i++)
+    {
+        printf("%s %d",a[i].name,a[i].age);
+        printf("\n");
+    }
+    return;
+}
+int findhim (PLAYER a[100],char person[90],int n)
+{
+    int i,s;
+    for(i=0;i<n;i++)
+    {
+        if(strcmp(a[i].name,person)==0)
+            s=a[i].age;
+    }
+    return s;
+}
+int main()
+{
+    PLAYER a[100];
+    int n,num;
+    char person[90];
+    printf("Enter the n\n");
+    scanf("%d",&n);
+    printf("Enter the name and age \n");
+    read(a,n);
+    display(a,n);
+     printf("Enter the persons name to find his age\n");
+     scanf("%s",person);
+    num=findhim(a,person,n);
+    printf("The persons age is %d",num);
+    return 0;
+
+}
