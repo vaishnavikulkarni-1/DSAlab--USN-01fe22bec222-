@@ -1,0 +1,16 @@
+#include<stdio.h>
+int findsquare(int n)
+{
+    int s;
+    s=n*n;
+    return s;
+}
+int main()
+{
+    int n,num;
+    printf("Enter the number which is used to find the square\n");
+    scanf("%d",&n);
+    num=findsquare(n);
+    printf("The square of the number is %d",num);
+    return 0;
+}
