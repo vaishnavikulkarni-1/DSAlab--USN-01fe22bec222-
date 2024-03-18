@@ -1,0 +1,20 @@
+/*program to compute the change in height*/
+#include<stdio.h>
+#define pi 3.14
+#define alpha 11.1*0.00001
+float height(int t)
+{
+    float h;
+    h=t* pi* alpha;
+    return h;
+}
+int main()
+{
+    int t;
+    float h;
+    printf("Enter the value of t\n");
+    scanf("%d",&t);
+    h=height(t);
+    printf("the change in height is %6f\n",h);
+    return 0;
+}
