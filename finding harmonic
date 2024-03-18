@@ -1,0 +1,27 @@
+#include<stdio.h>
+float sum_harmonic(int N)
+{
+    int i=1;
+    int n;
+    float sum=0;
+    while (i<=N)
+    {
+        printf("Enter the no.");
+        scanf("%d",&n);
+        sum=sum+1.0/n;
+        i++;
+
+        }
+    return sum;
+}
+int main()
+{
+    int N;
+    float sum,H;
+    printf("Enter the number");
+    scanf("%d",&N);
+    sum=sum_harmonic(N);
+    H=N/sum;
+    printf("The harmonic is %f ",H);
+    return 0;
+}
